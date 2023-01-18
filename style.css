@@ -1,0 +1,53 @@
+/*----------General styles for the document-----------*/
+body {
+  background-color: #22262a;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+.container {
+  border-radius: 10px;
+  background-color: #4f565e;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+/*----------Initial data block----------*/
+.container__initial-data {
+  margin-bottom: 20px;
+}
+.initial-data__title {
+  color: white;
+  margin: 5px auto;
+  width: max-content;
+}
+.initial-data__input {
+
+}
+
+
+
+
+#arrayDisplay{
+  height: 200px;
+  background-color: gray;
+  display: flex;
+  width: max-content;
+  flex-flow: wrap-reverse;
+}
+.arrayElem {
+  width: 20px;
+  height: 100%;
+  background-color: red;
+}
+.spaceWhite {
+  height: 100%;
+  width: 5px;
+  background-color: gray;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Connect the Dots</title>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Algorithm, Sorting, Bubble, Quick, Selection">
+    <meta name="description" content="Sorting algorothms visualisation">
+    <meta name="author" content="Zornitsa Dimova">
+
+    <link rel="stylesheet" type="text/css" href = "style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="container__initial-data">
+        <h1 class="initial-data__title">Sorting algorithms visualization</h1>
+        <div class="initial-data__input">
+          <label for="countElements">Please enter array elements number:</label>
+          <input type="number" name="count" id="countElements">
+          <label name="array">Please enter each array element:</label>
+        </div>
+      </div>
+      <div class="container__data-sorting">
+        <span class="data-sorting__algorithm" id="arrayDisplay"></span>
+        <span class="data-sorting__algorithm"></span>
+        <span class="data-sorting__algorithm"></span>
+      </div>
+      <div class="container__navigate">
+        <button class="navigate__button">Previous step</button>
+        <button class="navigate__button">Next step</button>
+      </div>
+    </main>
+  </body>
+</html>
