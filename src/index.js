@@ -47,6 +47,7 @@ class App {
       return (i + 1);
     }
 
+    // Quick Sort implementation
     function quickSort(arr, low, high) {
       if (low < high) {
         let pi = partition(arr, low, high);
@@ -69,24 +70,35 @@ class App {
       }
     }
 
-    // example array 
-    const testArray = [10, 2, 7, 9, 1, 5, 3, 8, 4, 6];
+    // Get and create initial array
+    var arrInitial = [];
 
-    // Display initial array
-    function displayArray(arr) {
-      const containerArr = document.getElementById("arrayDisplay");
-      for (let i=0; i<arr.length; i++) {
-        let elem = document.createElement("div"); 
-        elem.id = arr[i];
-        elem.className = "arrayElem";
-        elem.style.height = arr[i]*20 + "px";
-        containerArr.appendChild(elem);
-        let space = document.createElement("div");
-        space.className = "spaceWhite";
-        containerArr.appendChild(space);
+    function getArray() {
+      const elemCount = document.getElementById("countElements").value;
+      let elemAll = document.getElementById("elements").value;
+
+      if (elemCount == 0 || elemAll == 0) {
+        alert("Please enter needed information.");
+      }
+      else if (elemAll/(10**elemCount)>1 || elemAll/(10**(elemCount-1))<1) {
+        alert("Please enter the right amount of elements.");
+      }
+      else {
+        for (let i = elemCount-1; i>=0; i--) {
+          arrInitial[i] = elemAll%10;
+          elemAll = Math.floor(elemAll/10);
+        }
       }
     }
-    displayArray(testArray);
+
+    function createArray() {
+      const allContainers = document.getElementsByClassName("data-sorting__algorithm");
+      for (let i = 0; i < allContainers.length; i++) {
+        allContainers[i];
+      }
+    }
+
+    document.getElementById("submit").addEventListener("click", getArray);
   }
 }
 

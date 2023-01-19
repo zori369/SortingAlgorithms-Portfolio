@@ -22,18 +22,25 @@
       <div class="container__initial-data">
         <h1 class="initial-data__title">Sorting algorithms visualization</h1>
         <div class="initial-data__input">
-          <label for="countElements">Please enter array elements number:</label>
-          <input type="number" name="count" id="countElements">
-          <label name="array">Please enter each array element:</label>
+          <div class="input__initial-count">
+            <label class="count__label" for="countElements">Please enter array elements number:</label>
+            <input class="count__input" type="number" name="count" id="countElements" value="0">
+          </div>
+          <div class="input__initial-count">
+            <label class="count__label" name="elements">Please enter the array elements as a number:</label>
+            <input class="count__input" type="number" name="elements" id="elements" value="0">
+          </div>
+          <button class="input__submit-button" id="submit">Submit</button>
         </div>
       </div>
       <div class="container__data-sorting">
-        <span class="data-sorting__algorithm" id="arrayDisplay"></span>
-        <span class="data-sorting__algorithm"></span>
-        <span class="data-sorting__algorithm"></span>
+        <div class="data-sorting__algorithm" id="arrayDisplay"></div>
+        <div class="data-sorting__algorithm"></div>
+        <div class="data-sorting__algorithm"></div>
       </div>
       <div class="container__navigate">
         <button class="navigate__button">Previous step</button>
+        <button class="navigate__button">Start</button>
         <button class="navigate__button">Next step</button>
       </div>
     </main>
